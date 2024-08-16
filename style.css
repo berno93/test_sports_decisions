@@ -1,0 +1,113 @@
+@media (max-width: 768px) {
+    /* Cache les colonnes 3 et 4 par défaut */
+    th:nth-child(3), th:nth-child(4),
+    td:nth-child(3), td:nth-child(4) {
+        display: none;
+    }
+}
+
+
+/* Général */
+
+body {
+  padding: 10px;
+  background-color: black;
+}
+
+* {
+  color: white;
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+div#app {
+  display: grid;
+}
+
+/* Table */
+
+/* Table Head */
+
+th:not(:first-child) {
+  background: rgb(0, 0, 0);
+  border: 10px solid rgba(53, 71, 80, 255);
+  color: rgb(57, 255, 229);
+}
+
+th:first-child {
+  background: black;
+}
+
+th {
+  width: 500px;
+}
+
+thead {
+  background-color: rgba(53, 71, 81, 255);
+  text-align: center;
+  color: rgba(96, 129, 150, 255);
+}
+
+tr#table-top {
+  height: 60px;
+}
+
+tr#table-top td {
+  background-color: black;
+}
+
+#table-top td:not(:first-child) {
+  background-color: rgba(53, 71, 81, 255);
+  text-align: center;
+  color: rgba(96, 129, 150, 255);
+}
+
+/* Table body */
+
+tbody tr {
+  border-bottom: 1px solid;
+  border-style: dashed;
+  border-color: rgba(96, 129, 150, 255);
+}
+
+.table-info td:not(:first-child) {
+  text-align: center;
+}
+
+p.p-info {
+  font-size: 1.4rem;
+}
+
+/* Bloc joueur */
+
+i {
+  font-size: 50px;
+}
+
+.icon {
+  width: max-content;
+  float: inline-start;
+  margin: 0px 20px 0px 10px;
+  display: inline;
+}
+
+.player-info {
+  display: inline;
+}
+
+.player-card {
+  padding: 2px;
+  background-color: rgba(0, 57, 87, 255);
+  border-radius: 10px;
+  margin: 30px 20px 10px 0px;
+  display: flex;
+  width: auto;
+}
+
+.p-position {
+  color: rgb(168, 161, 161);
+  font-style: italic;
+  font-weight: bolder;
+  font-family: "Encode Sans", sans-serif;
+}

@@ -31,18 +31,24 @@
             <thead>
                 <tr id="table-top">
                     <th></th>
-                    <th><p class="p-thead">END OF CONTRACTS</p></th>
-                    <th><p class="p-thead">OPTION</p></th>
-                    <th><p class="p-thead">OPTION - VALIDITY</p></th>
+                    <th>
+                        <p class="p-thead">END OF CONTRACTS</p>
+                    </th>
+                    <th>
+                        <p class="p-thead">OPTION</p>
+                    </th>
+                    <th>
+                        <p class="p-thead">OPTION - VALIDITY</p>
+                    </th>
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="player in players" :key="player.id" class="table-info">
+                <tr class="table-info" v-for="player in players" :key="player.id">
                     <td class="player">
                         <player :player="player"></player>
                     </td>
                     <td>
-                        <p :style="{color : player.contract_end_status}" class="p-info">{{ player.contract_end }}</p>
+                        <p class="p-info" :style="{color : player.contract_end_status}">{{ player.contract_end }}</p>
                     </td>
                     <td>
                         <p class="p-info">{{ player.option === null ? '--' : player.option}}</p>

@@ -1,11 +1,19 @@
 @media (max-width: 768px) {
-    /* Cache les colonnes 3 et 4 par défaut */
-    th:nth-child(3), th:nth-child(4),
-    td:nth-child(3), td:nth-child(4) {
-        display: none;
-    }
+  /* Cache les colonnes 3 et 4 par défaut */
+  th:nth-child(3),
+  th:nth-child(4),
+  td:nth-child(3),
+  td:nth-child(4) {
+    display: none;
+  }
 }
-
+@media (max-width: 768px) {
+  th:nth-child(2) 
+  {
+    border-top-right-radius: 10px; 
+    border-bottom-right-radius: 10px; 
+  }
+}
 
 /* Général */
 
@@ -17,8 +25,6 @@ body {
 * {
   color: white;
   font-family: "New Amsterdam", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 div#app {
@@ -29,39 +35,54 @@ div#app {
 
 /* Table Head */
 
+
+
 th:not(:first-child) {
-  background: rgb(0, 0, 0);
-  border: 10px solid rgba(53, 71, 80, 255);
-  color: rgb(57, 255, 229);
+  width: 350px;
 }
 
+th:nth-child(2),
+td:nth-child(2)
+{
+  padding-left:50px;
+}
+
+th:nth-child(4),
+td:nth-child(4)
+{
+  padding-right:50px;
+}
+
+.p-thead {
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: rgba(57, 179, 255, 0.638);
+  font-size: 1.3em;
+  padding-bottom: 15px;
+  margin: 5px 5px 5px 0px;
+}
+
+/* Colonne en haut a gauche en noir */
 th:first-child {
   background: black;
-}
-
-th {
-  width: 500px;
 }
 
 thead {
   background-color: rgba(53, 71, 81, 255);
   text-align: center;
-  color: rgba(96, 129, 150, 255);
 }
 
-tr#table-top {
-  height: 60px;
+#table-top th:nth-child(2) {
+  border-top-left-radius: 10px; 
+  border-bottom-left-radius: 10px; 
 }
 
-tr#table-top td {
-  background-color: black;
+#table-top th:nth-child(4) {
+  border-top-right-radius: 10px; 
+  border-bottom-right-radius: 10px; 
 }
 
-#table-top td:not(:first-child) {
-  background-color: rgba(53, 71, 81, 255);
-  text-align: center;
-  color: rgba(96, 129, 150, 255);
-}
 
 /* Table body */
 
@@ -110,4 +131,5 @@ i {
   font-style: italic;
   font-weight: bolder;
   font-family: "Encode Sans", sans-serif;
+  margin-right: 15px;
 }

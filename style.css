@@ -57,44 +57,10 @@ td:nth-child(4) {
   border: 1px solid black;
   border-radius: 10px;
   color: rgba(57, 179, 255, 0.638);
-  font-size: 1.3em;
-  padding-bottom: 15px;
+  font-size: 1.3rem;
   padding: 0px 48px 15px 48px;
   margin: 5px 5px 5px 0px;
 }
-
-/* #p-end {
-  background-color: black;
-  border: 1px solid black;
-  border-radius: 10px;
-  color: rgba(57, 179, 255, 0.638);
-  font-size: 1.3em;
-  display: inline-block;
-  width: 342px;
-  height: 47px;
-}
-
-#p-option {
-  background-color: black;
-  border: 1px solid black;
-  border-radius: 10px;
-  color: rgba(57, 179, 255, 0.638);
-  font-size: 1.3em;
-  display: inline-block;
-  width: 342px;
-  height: 47px;
-}
-
-#p-option-validity {
-  background-color: black;
-  border: 1px solid black;
-  border-radius: 10px;
-  color: rgba(57, 179, 255, 0.638);
-  font-size: 1.3em;
-  display: inline-block;
-  width: 342px;
-  height: 47px;
-} */
 
 /* Colonne en haut a gauche en noir */
 th:first-child {
@@ -104,7 +70,7 @@ th:first-child {
 thead {
   background-color: rgba(53, 71, 81, 255);
   text-align: center;
-  height: 60px;
+  /* height: 60px; */
 }
 
 #table-top th:nth-child(2) {
@@ -151,7 +117,7 @@ i {
 }
 
 .player-card {
-  padding: 2px;
+  padding: 5px;
   background-color: rgba(0, 57, 87, 255);
   border-radius: 10px;
   margin: 30px 20px 10px 0px;
@@ -189,14 +155,16 @@ i {
   float: inline-end;
 }
 
-button#prevButton ,.HideButtonLeft{
+button#prevButton,
+.HideButtonLeft {
   position: relative;
   left: -45px;
   top: 13px;
   background: none;
 }
 
-button#nextButton, .HideButtonRight {
+button#nextButton,
+.HideButtonRight {
   position: relative;
   right: -45px;
   top: 13px;

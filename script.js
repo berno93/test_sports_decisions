@@ -39,6 +39,8 @@ function updateButtonState() {
   const HideButton = document.querySelectorAll(".HideButton");
   const paddingRight = document.querySelectorAll(".paddingRight");
   const paddingLeft = document.querySelectorAll(".paddingLeft");
+  const pinfo1 = document.getElementById("pinfo1");
+  const pinfo3 = document.getElementById("pinfo3");
 
   // Mise à jour de l'état des boutons en fonction de la largeur de l'écran
   if (window.innerWidth > 768) {
@@ -47,12 +49,16 @@ function updateButtonState() {
     HideButton.forEach((button) => (button.style.display = "none"));
     paddingRight.forEach((th) => (th.style.paddingRight = ""));
     paddingLeft.forEach((th) => (th.style.paddingLeft = ""));
+    pinfo1.style.paddingRight = "";
+    pinfo3.style.paddingRight = "";
   } else {
     prevButton.disabled = false;
     nextButton.disabled = false;
     HideButton.forEach((button) => (button.style.display = ""));
     paddingRight.forEach((th) => (th.style.paddingRight = "50px"));
     paddingLeft.forEach((th) => (th.style.paddingLeft = "50px"));
+    pinfo1.style.paddingRight = "50px";
+    pinfo3.style.paddingLeft = "50px";
   }
 }
 
